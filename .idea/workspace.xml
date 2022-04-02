@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99e32b3f-5888-4447-a9c9-2600d0b07477" name="Changes" comment="Adding simple PutMapping to BeerController without an Implementation">
+    <list default="true" id="99e32b3f-5888-4447-a9c9-2600d0b07477" name="Changes" comment="fix handlePut() adding missed @RequestBody Annotation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/services/BeerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/services/BeerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/services/BeerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/services/BeerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/web/controller/BeerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +92,7 @@
       <workItem from="1648849270555" duration="2643000" />
       <workItem from="1648851980037" duration="358000" />
       <workItem from="1648887243803" duration="4078000" />
-      <workItem from="1648903663775" duration="5704000" />
+      <workItem from="1648903663775" duration="6460000" />
     </task>
     <task id="LOCAL-00001" summary="Initialilzing Project with Simple Service and Controller">
       <created>1648887761624</created>
@@ -120,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648920026928</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix handlePost() adding missed @RequestBody Annotation">
+      <created>1648920395837</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648920395837</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix handlePut() adding missed @RequestBody Annotation">
+      <created>1648920444503</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648920444503</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +158,8 @@
     <MESSAGE value="Assignment, Adding Simple CustomerDto with Service and Controller" />
     <MESSAGE value="Adding simple PostMapping to BeerController" />
     <MESSAGE value="Adding simple PutMapping to BeerController without an Implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding simple PutMapping to BeerController without an Implementation" />
+    <MESSAGE value="fix handlePost() adding missed @RequestBody Annotation" />
+    <MESSAGE value="fix handlePut() adding missed @RequestBody Annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix handlePut() adding missed @RequestBody Annotation" />
   </component>
 </project>
