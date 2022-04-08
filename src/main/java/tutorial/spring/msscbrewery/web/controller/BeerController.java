@@ -7,11 +7,13 @@ import org.springframework.web.bind.annotation.*;
 import tutorial.spring.msscbrewery.services.BeerService;
 import tutorial.spring.msscbrewery.web.model.BeerDto;
 
+import javax.validation.Valid;
 import java.util.UUID;
 
 /**
  * created by Joseph Yacoub  on 01 Apr 2022
  */
+@Deprecated
 @RequestMapping("/api/v1/beer")
 @RestController
 public class BeerController {
@@ -28,7 +30,7 @@ public class BeerController {
     }
 
     @PostMapping
-    public ResponseEntity<BeerDto> handlePost(@RequestBody BeerDto beerDto){
+    public ResponseEntity<BeerDto> handlePost(@Valid @RequestBody BeerDto beerDto){
 
         BeerDto savedDto = beerService.saveNewBeer(beerDto);
 
@@ -39,7 +41,7 @@ public class BeerController {
     }
 
     @PutMapping(path="/{beerId}")
-    public ResponseEntity<BeerDto> handlePut(@PathVariable("beerId") UUID beerId,@RequestBody BeerDto beerDto){
+    public ResponseEntity<BeerDto> handlePut(@PathVariable("beerId") UUID beerId,@Valid @RequestBody BeerDto beerDto){
 
         beerService.updateBeer(beerId, beerDto);
 
