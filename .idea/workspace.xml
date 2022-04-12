@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99e32b3f-5888-4447-a9c9-2600d0b07477" name="Changes" comment="Adding deleteMapping to the BeerController">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/services/v2/BeerServiceV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/services/v2/BeerServiceV2Impl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/web/controller/v2/BeerControllerV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/web/model/v2/BeerDtoV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/web/model/v2/BeerStyleEnum.java" afterDir="false" />
+    <list default="true" id="99e32b3f-5888-4447-a9c9-2600d0b07477" name="Changes" comment="Adding V2 of the API and deprecate V1">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tutorial/spring/msscbrewery/web/controller/BeerControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mssc-brewery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mssc-brewery.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/services/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/services/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/services/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/web/controller/BeerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/web/controller/BeerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/web/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/web/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/web/model/BeerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tutorial/spring/msscbrewery/web/model/BeerDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +71,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="tutorial.spring.msscbrewery.services.v2" />
       <recent name="tutorial.spring.msscbrewery.services" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -91,7 +81,7 @@
       <recent name="tutorial.spring.msscbrewery.web.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeerControllerTest.getBeer">
+  <component name="RunManager" selected="JUnit.BeerControllerTest">
     <configuration name="BeerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mssc-brewery" />
       <extension name="coverage">
@@ -123,6 +113,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MsscBreweryApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mssc-brewery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tutorial.spring.msscbrewery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tutorial.spring.msscbrewery" />
+      <option name="MAIN_CLASS_NAME" value="tutorial.spring.msscbrewery.MsscBreweryApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,8 +148,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BeerControllerTest.getBeer" />
         <item itemvalue="JUnit.BeerControllerTest" />
+        <item itemvalue="JUnit.MsscBreweryApplicationTests" />
+        <item itemvalue="JUnit.BeerControllerTest.getBeer" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +170,8 @@
       <workItem from="1649279475937" duration="4926000" />
       <workItem from="1649329227135" duration="1618000" />
       <workItem from="1649408983926" duration="2315000" />
-      <workItem from="1649412008973" duration="2622000" />
+      <workItem from="1649412008973" duration="3565000" />
+      <workItem from="1649764484027" duration="1143000" />
     </task>
     <task id="LOCAL-00001" summary="Initialilzing Project with Simple Service and Controller">
       <created>1648887761624</created>
@@ -215,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648921379219</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding V2 of the API and deprecate V1">
+      <created>1649414893637</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649414893637</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +254,7 @@
     <MESSAGE value="fix handlePost() adding missed @RequestBody Annotation" />
     <MESSAGE value="fix handlePut() adding missed @RequestBody Annotation" />
     <MESSAGE value="Adding deleteMapping to the BeerController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding deleteMapping to the BeerController" />
+    <MESSAGE value="Adding V2 of the API and deprecate V1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding V2 of the API and deprecate V1" />
   </component>
 </project>
